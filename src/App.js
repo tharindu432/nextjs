@@ -9,7 +9,7 @@ function App() {
       <Todo text="learn react"/>
       <Todo text="learn course"/>
       <Todo text="explore the full react course"/>
-      <Todo/>
+      
       
         
 

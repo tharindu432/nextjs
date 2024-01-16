@@ -1,10 +1,10 @@
-import React from 'react'
-import { useState } from 'react'
+import React,{useState} from 'react';
+
 
 import Model from './Model';
 import Backdrop from './Backdrop';
 
-const Todo = (props) => {
+function Todo(props){
   const [modelIsOpen,setModelIsOpen] = useState(false);
     function deleteHandler(){
         console.log(props.text)
@@ -22,15 +22,15 @@ const Todo = (props) => {
         <div className='actions'>
             <button className='btn' onClick={deleteHandler}>Delete</button>
         </div>
-        {modelIsOpen? <Model/>:null }
+        {modelIsOpen? <Model onCancel={closeModelHandler} onConfirm={closeModelHandler}/>:null }
         {/*  short way--> {modelIsOpen && <Model/>} */}
-        {modelIsOpen && <Backdrop onClick={closeModelHandler}/>}
+        {modelIsOpen && <Backdrop onCancel={closeModelHandler}/>}
       
       
 
       </div>
    
-  )
+  );
 }
 
-export default Todo
+export default Todo;
