@@ -1,16 +1,17 @@
-
+import  m1 from '../images/m1.jpeg';
+import m2 from  '../images/m2.jpg';
 import MeetupList from "../components/meetups/MeetupList";
 const DUMMY_DATA=[
     {
         id:'m1',
         title:'this is a first meetup',
-        image:'https://st.depositphotos.com/1594308/2118/i/450/depositphotos_21186965-stock-photo-discussion.jpg',
+        image:m1,
         description:'this is a first meetup we get to learn about oop and data structures concepts... '
     },
     {
         id:'m2',
         title:'this is a second meetup',
-        image:'https://www.ringcentral.com/gb/en/blog/wp-content/uploads/2021/05/happy-manager-leads-a-meeting-in-the-office-scaled.jpg',
+        image:m2,
         description:'this is a second meetup we get to learn about oop and data structures concepts... '  
     }
 

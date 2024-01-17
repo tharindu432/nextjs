@@ -1,10 +1,11 @@
 import classes from './MeetupItem.module.css';
-
+import Card from '../ui/Card';
 
 function MeetupItem(props){
 return <li className={classes.item}>
+    <Card>
     <div className={classes.image}>
-        <img src={props.img} alt={props.title}></img>
+        <img src={props.image} alt={props.title}></img>
     </div>
     <div className={classes.content}>
     <h3>{props.title}</h3>
@@ -18,6 +19,7 @@ return <li className={classes.item}>
             To Favorites
         </button>
     </div>
+    </Card>
 </li>
 }
 
